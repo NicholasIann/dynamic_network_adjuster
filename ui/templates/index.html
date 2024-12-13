@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Network Adjuster Dashboard</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        h1 { text-align: center; }
+        .box { border: 1px solid #ccc; padding: 15px; margin: 10px; }
+        .status { font-weight: bold; }
+    </style>
+</head>
+<body>
+    <h1>Dynamic Network Adjuster Dashboard</h1>
+    <div class="box">
+        <h3>Network Traffic</h3>
+        <p><strong>Sent: </strong>{{ traffic_sent }} bytes</p>
+        <p><strong>Received: </strong>{{ traffic_received }} bytes</p>
+    </div>
+    <div class="box">
+        <h3>QoS Settings</h3>
+        <p><strong>Status: </strong>{{ 'Active' if qos_status.qos_active else 'Inactive' }}</p>
+        <p><strong>Rate Limit: </strong>{{ qos_status.rate_limit }}</p>
+        <p><strong>Buffer Size: </strong>{{ qos_status.buffer_size }}</p>
+    </div>
+</body>
+</html>
