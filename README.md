@@ -25,7 +25,7 @@ The dashboard displays data in real time, allowing administrators to monitor net
 
 Technologies Used:
 1. Python for plugin logic.
-2. psutil for monitoring network metrics.
+2. Psutil for monitoring network metrics.
 3. Flask for building web UI.
 4. OpenStack (DevStack) for cloud platform integration.
 5. HTML/CSS/JavaScript for interactive data visualization.
