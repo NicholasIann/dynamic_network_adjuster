@@ -22,3 +22,10 @@ The monitoring plugin collects network traffic information using the psutil libr
 Visualization via Flask Interface:
 Network traffic information is visualized via the web interface developed with Flask. (dynamic_network_adjuster_ui.py)
 The dashboard displays data in real time, allowing administrators to monitor network activity and make decisions based on observed metrics.
+
+Technologies Used:
+1. Python for plugin logic.
+2. psutil for monitoring network metrics.
+3. Flask for building web UI.
+4. OpenStack (DevStack) for cloud platform integration.
+5. HTML/CSS/JavaScript for interactive data visualization.
