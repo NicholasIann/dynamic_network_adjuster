@@ -11,7 +11,7 @@ A Flask-based web application that provides a dashboard to visualize network tra
 Users can see detailed statistics about data sent and received, with dynamic updates through a visual interface.
 The UI is made in HTML, CSS and JavaScript.
 
-Configuration Plugin (plugin.sh):
+3. Configuration Plugin (plugin.sh):
 A script that automates the integration of the plugin into DevStack.
 It configures the necessary dependencies and ensures that the plugin runs correctly during DevStack startup.
 
