@@ -11,8 +11,7 @@ def get_network_traffic():
 
 def get_qos_status():
     """ Restituisce lo stato attuale di QoS (per semplicità, lo stato è statico) """
-    # Questo è solo un esempio: personalizza per integrare con il sistema di QoS effettivo
-    return {
+        return {
         'qos_active': True,
         'rate_limit': '100mbit',
         'buffer_size': '1600'
