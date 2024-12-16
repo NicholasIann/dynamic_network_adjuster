@@ -12,7 +12,6 @@ def adjust_qos(traffic_sent, traffic_received):
     """ Adatta le configurazioni di QoS in base al traffico di rete """
     if traffic_sent > 1000000000 or traffic_received > 1000000000:  # Se supera 1GB
         print("High network traffic detected. Adjusting QoS settings...")
-        # Esegui un comando per modificare QoS (ipotetico, dovresti avere strumenti specifici per la tua rete)
         call(["tc", "qdisc", "add", "dev", "eth0", "root", "handle", "1:0", "tbf", "rate", "100mbit", "buffer", "1600", "limit", "3000"])
     else:
         print("Network traffic is normal. No adjustment needed.")
